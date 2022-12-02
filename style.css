@@ -1,0 +1,17 @@
+body {
+  background-color: #dbc85e;
+}
+p {
+  color: black;
+  font-size: 45px;
+  font-family: "Baka";
+}
+.web {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
