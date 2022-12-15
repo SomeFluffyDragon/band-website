@@ -63,12 +63,21 @@
    <div class="columns">
     <div class="column">
     <a href="https://en.wikipedia.org/wiki/Hellbilly_Deluxe"><img src="images/album-1.jpg"></a>
+    <div class="txt6">
+    <p>Call of the Zombie, Superbeast, Dragula, Living Dead Girl, Perversion 99, Demonoid Phenomenon, Spookshow Baby, How to make a monster, Meet the Creeper, The Ballad of Resurrection Joe and Rosa Whore, What Lurks on Channel X?, Return of the Phantom Stranger, The Beginning of the End</p>
     </div>
+  </div>
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/The_Sinister_Urge_(album)"><img src="images/album-2.jpg"></a>
+        <div class="txt6">
+          <p>Sinners Inc., DEmon Speeding, Dead Gurl Suuperstar, Never Gonna Stop (The Red Red Kroovy), Iron Head, (Go to) California, Feel So Numb, Transylvanian Transmissions Pt. 1, Bring Her Down (to Crippletown), Scum of the Earth, House of 1000 Corpses</p>
+          </div>
     </div>
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/Educated_Horses"><img src="images/album-3.jpg"></a>
+        <div class="txt6">
+          <p>Sawdust in the Blood, American Witch, Foxy Foxy, 17 Year Locust, The Scorpion Sleeps, 100 Ways, Let It All Bleed Out, Death of It All, Ride, The Devil's Rejects, The Lords of Salem</p>
+          </div>
     </div>
 
     </div>
@@ -77,14 +86,51 @@
   <div class="columns">
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/Hellbilly_Deluxe_2"><img src="images/album-4.jpg"></a>
+        <div class="txt6">
+          <p>Jesus Frankenstein, Sick Bubblegum, What?, Mars Needs Women, Werewolf, Baby!, Wirgin Witch, Death and Destiny Inside the Dream Factory, Burn, Cease to Exist, Werewolf Women of the SS, The Man Who Laughs</p>
+          </div>
     </div>
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/Venomous_Rat_Regeneration_Vendor"><img src="images/album5.jpg"></a>
+        <div class="txt6">
+          <p>Call of the Zombie, Superbeast, Dragula, Living Dead Girl, Perversion 99, Demonoid Phenomenon, Spookshow Baby, How to make a monster, Meet the Creeper, The Ballad of Resurrection Joe and Rosa Whore, What Lurks on Channel X?, Return of the Phantom Stranger, The Beginning of the End</p>
+          </div>
     </div>
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/The_Electric_Warlock_Acid_Witch_Satanic_Orgy_Celebration_Dispenser"><img src="images/album-6.jpg"></a>
+        <div class="txt6">
+          <p>Call of the Zombie, Superbeast, Dragula, Living Dead Girl, Perversion 99, Demonoid Phenomenon, Spookshow Baby, How to make a monster, Meet the Creeper, The Ballad of Resurrection Joe and Rosa Whore, What Lurks on Channel X?, Return of the Phantom Stranger, The Beginning of the End</p>
+          </div>
     </div>
     <div class="column">
         <a href="https://en.wikipedia.org/wiki/The_Lunar_Injection_Kool_Aid_Eclipse_Conspiracy"><img src="images/album-7.png"></a>
+        <div class="txt6">
+          <p>Call of the Zombie, Superbeast, Dragula, Living Dead Girl, Perversion 99, Demonoid Phenomenon, Spookshow Baby, How to make a monster, Meet the Creeper, The Ballad of Resurrection Joe and Rosa Whore, What Lurks on Channel X?, Return of the Phantom Stranger, The Beginning of the End</p>
+          </div>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+    
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+    
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+    
+        });
+      });
+    
+    });
+</script>
+  </body>
+</html>

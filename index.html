@@ -10,91 +10,106 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="images/rob-zombie-logo.png" width="112" height="28">
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="index.html">
-          Home
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="images/rob-zombie-logo.png" width="112" height="28" />
         </a>
-  
-        <a class="navbar-item" href="about.html">
-          About
-     
-            </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
 
-            <a class="navbar-item" href="music-videos.html">
-              Music
-         
-                </a>
-                <a class="navbar-item" href="discography.html">
-                  Discography
-             
-                    </a>   <a class="navbar-item" href="tour.html">
-                      Tour
-                 
-                        </a>
-          </div>
+          <a class="navbar-item" href="about.html"> About </a>
+
+          <a class="navbar-item" href="music-videos.html"> Music </a>
+          <a class="navbar-item" href="discography.html"> Discography </a>
+          <a class="navbar-item" href="tour.html"> Tour </a>
         </div>
       </div>
-  
-        </div>
+    </nav>
+    <div class="web">
+      <img src="./images/red-web.png" alt="red spider web" />
+    </div>
+    <div>
+      <img src="images/rob-zombie-logo.png" alt="rob zombie logo" />
+      <div class="txt1">
+        <p>Variety on "The Munsters"</p>
+        <p>The Rolling Stone on the Triumph of King Freak</p>
       </div>
     </div>
-  </nav>
-  <div class="web">
-    <img src="./images/red-web.png" alt="red spider web">
-   </div>
-  <div>
-    <img src="images/rob-zombie-logo.png" alt="rob zombie logo">
-    <div class="txt1">
-    <p>Variety on "The Munsters"</p>
-    <p>The Rolling Stone on the Triumph of King Freak</p>
-  </div>
     <div class="columns">
-    
       <div class="column is-one-quarter">
         <div class="left">
-       <img src="images/rob-zombie-left.png"
-        alt="rob zombie in red lighting">
-      </div>
-    </div>
-      <div class="column">
-        <img src="images/insta-logo.png" alt="instagram logo">
-      </div>
-      <div class="column">
-        <img src="images/facebook-logo.png" alt="facebook logo">
+          <img
+            src="images/rob-zombie-left.png"
+            alt="rob zombie in red lighting"
+          />
+        </div>
       </div>
       <div class="column">
-        <img src="images/twitter-logo.png" alt="twitter logo">
+        <img src="images/insta-logo.png" alt="instagram logo" />
       </div>
       <div class="column">
-        <img src="images/youtube-logo.png" alt="youtube logo">
+        <img src="images/facebook-logo.png" alt="facebook logo" />
       </div>
       <div class="column">
-        <img src="images/tiktok-logo.png" alt="tiktok logo">
+        <img src="images/twitter-logo.png" alt="twitter logo" />
       </div>
       <div class="column">
-        <img src="images/spotify-logo.png" alt="spotify logo">
+        <img src="images/youtube-logo.png" alt="youtube logo" />
       </div>
       <div class="column">
-        <img src="images/apple-music-logo.png" alt="apple music logo">
+        <img src="images/tiktok-logo.png" alt="tiktok logo" />
       </div>
       <div class="column">
+        <img src="images/spotify-logo.png" alt="spotify logo" />
+      </div>
+      <div class="column">
+        <img src="images/apple-music-logo.png" alt="apple music logo" />
+      </div>
+      <div class="column is-one-quarter">
         <div class="right">
-        <img src="images/rob-zombie-right.png" alt="rob zombie in green light">
+          <img
+            src="images/rob-zombie-right.png"
+            alt="rob zombie in green light"
+          />
+        </div>
       </div>
     </div>
-    </div>
-    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
