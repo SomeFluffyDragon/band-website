@@ -2,6 +2,12 @@
   "folders": [
 	{
 		"path": "."
+	},
+	{
+		"path": "../project-2"
+	},
+	{
+		"path": "../../Web Language 1/Movie Website 2"
 	}
 ],
   "settings": {
